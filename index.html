@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <!-- Font Awesome link -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <title>IG Feed with Bootstrap</title>
+  <!-- CSS stylesheet link -->
+  <link href="./style.css" rel="stylesheet" type="text/css">
+  <!-- Header of the page -->
+</head>
+
+<body class="pt-5">
+  <!-- Start of the first row  -->
+  <header>
+    <!-- Instagram icon and name -->
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="navbar navbar-light bg-light border-bottom fixed-top">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <i class="fab fa-instagram text-secondary fs-3"><em><b> Instagram</b></em></i>
+            </a>
+
+            <!-- Start of the icons on the right side -->
+            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Create a new post
+              </button>
+
+              <!-- Cog button -->
+              <div class="btn-group me-2" role="group" aria-label="Second group">
+                <div class="dropdown">
+                  <button class="btn fas fa-cog dropdown-toggle" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Log-out</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- End of the cog button -->
+
+  <!-- This is the Modal Content -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1"></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          </form>
+          <i class="fas fa-camera fs-5 border rounded p-1 mt-3"></i>
+          <i class="fas fa-map-marker-alt fs-5 border rounded p-1 pe-2 ps-2 mt-3"></i>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success text-light">Publish</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of the first row (header) -->
+
+  <!-- Start of the second row (Page Buttons) -->
+  <div class="container-fluid pt-3">
+    <div class="row">
+      <ul class="nav nav-pills mb-3 justify-content-center mt-2" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+            type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+            <i class="fas fa-th"></i>
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+            type="button" role="tab" aria-controls="pills-profile" aria-selected="true">
+            <i class="fas fa-square"></i></button>
+        </li>
+      </ul>
+      <!-- End of the second row -->
+
+      <!-- Content of the page inside of the tabs -->
+      <div class="tab-content" id="pills-tabContent">
+
+        <!-- First tab (Photos) -->
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="card-group d-flex col-12">
+                <div class="card border-0 mt-1 col-md-8">
+                  <img src="https://picsum.photos/500/300?random=1" class="card-img" alt="...">
+                </div>
+                <div class="card ms-1 me-1 border-0 mt-1 col-md-8">
+                  <img src="https://picsum.photos/500/300?random=2" class="card-img" alt="...">
+
+                </div>
+                <div class="card border-0 mt-1">
+                  <img src="https://picsum.photos/500/300?random=3" class="card-img" alt="...">
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="container-fluid">
+            <div class="row">
+              <div class="card-group d-flex col-12">
+                <div class="card border-0 mt-1">
+                  <img src="https://picsum.photos/500/300?random=4" class="card-img" alt="...">
+                </div>
+                <div class="card ms-1 me-1 border-0 mt-1">
+                  <img src="https://picsum.photos/500/300?random=5" class="card-img" alt="...">
+
+                </div>
+                <div class="card border-0 mt-1">
+                  <img src="https://picsum.photos/500/300?random=6" class="card-img" alt="...">
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="container-fluid">
+            <div class="row">
+              <div class="card-group d-flex col-12">
+                <div class="card border-0 mt-1 mb-1">
+                  <img src="https://picsum.photos/500/300?random=7" class="card-img" alt="...">
+                </div>
+                <div class="card ms-1 me-1 border-0 mt-1 mb-1">
+                  <img src="https://picsum.photos/500/300?random=8" class="card-img" alt="...">
+
+                </div>
+                <div class="card border-0 mt-1 mb-1">
+                  <img src="https://picsum.photos/500/300?random=9" class="card-img" alt="...">
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- Second part of the content (feed) -->
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+          <div class="contain">
+            <div class="post">
+              <div class="postHeader">
+                <h3>My first photo</h3>
+                <span>10/19</span>
+              </div>
+              <div class="postPhoto">
+                <img src="https://picsum.photos/500/300?random=1" alt="">
+              </div>
+              <div class="postContent">
+                <p><b><em>31 Likes</em></b></p>
+                <p>This is my first photo of the feed. I've trying to create this for a long time.</p>
+              </div>
+            </div>
+          </div>
+          <div class="contain">
+            <div class="post">
+              <div class="postHeader">
+                <h3>My second photo</h3>
+                <span>11/19</span>
+              </div>
+              <div class="postPhoto">
+                <img src="https://picsum.photos/500/300?random=2" alt="">
+              </div>
+              <div class="postContent">
+                <p><b><em>54 Likes</em></b></p>
+                <p>From now on, all the photos are the same code with the same styles!</p>
+              </div>
+            </div>
+          </div>
+          <div class="contain">
+            <div class="post">
+              <div class="postHeader">
+                <h3>My third photo</h3>
+                <span>12/19</span>
+              </div>
+              <div class="postPhoto">
+                <img src="https://picsum.photos/500/300?random=3" alt="">
+              </div>
+              <div class="postContent">
+                <p><b><em>23 Likes</em></b></p>
+                <p>This might be a cool doggo (?)</p>
+              </div>
+            </div>
+          </div>
+          <div class="contain">
+            <div class="post">
+              <div class="postHeader">
+                <h3>My forth photo</h3>
+                <span>13/19</span>
+              </div>
+              <div class="postPhoto">
+                <img src="https://picsum.photos/500/300?random=4" alt="">
+              </div>
+              <div class="postContent">
+                <p><b><em>87 Likes</em></b></p>
+                <p>Using a randomizer photo generation we get a variety of photos :)</p>
+              </div>
+            </div>
+          </div>
+          <div class="contain">
+            <div class="post">
+              <div class="postHeader">
+                <h3>The last, but not less important, photo</h3>
+                <span>14/19</span>
+              </div>
+              <div class="postPhoto">
+                <img src="https://picsum.photos/500/300?random=5" alt="">
+              </div>
+              <div class="postContent">
+                <p><b><em>103 Likes</em></b></p>
+                <p>Last cool photo!</p>
+              </div>
+            </div>
+          </div>
+          <div class="contain">
+            <div class="post">
+              <div class="postHeader">
+                <h3>Random photo</h3>
+                <span>13/19</span>
+              </div>
+              <div class="postPhoto">
+                <img src="https://picsum.photos/500/300?random=6" alt="">
+              </div>
+              <div class="postContent">
+                <p><b><em>12 Likes</em></b></p>
+                <p>Using a randomizer photo generation we get a variety of photos :)</p>
+              </div>
+            </div>
+          </div>
+          <div class="contain">
+            <div class="post">
+              <div class="postHeader">
+                <h3>Random photo</h3>
+                <span>13/19</span>
+              </div>
+              <div class="postPhoto">
+                <img src="https://picsum.photos/500/300?random=7" alt="">
+              </div>
+              <div class="postContent">
+                <p><b><em>46 Likes</em></b></p>
+                <p>Using a randomizer photo generation we get a variety of photos :)</p>
+              </div>
+            </div>
+          </div>
+          <div class="contain">
+            <div class="post">
+              <div class="postHeader">
+                <h3>Random photo</h3>
+                <span>13/19</span>
+              </div>
+              <div class="postPhoto">
+                <img src="https://picsum.photos/500/300?random=8" alt="">
+              </div>
+              <div class="postContent">
+                <p><b><em>86 Likes</em></b></p>
+                <p>Using a randomizer photo generation we get a variety of photos :)</p>
+              </div>
+            </div>
+          </div>
+          <div class="contain">
+            <div class="post">
+              <div class="postHeader">
+                <h3>Random photo</h3>
+                <span>13/19</span>
+              </div>
+              <div class="postPhoto">
+                <img src="https://picsum.photos/500/300?random=9" alt="">
+              </div>
+              <div class="postContent pb-2">
+                <p><b><em>123 Likes</em></b></p>
+                <p>Using a randomizer photo generation we get a variety of photos :)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+ <!-- Script of bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+    integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+    integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+/* Second row of the page Style */
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: white;
+    background-color: gray;
+}
+
+.nav-link{
+    color: gray;
+}
+
+.nav-pills:hover, .nav-link:hover{
+    color: gray;
+}
+
+/* IG feed Style */
+
+.contain{
+    margin: 0 auto;
+    width: 500px;
+    }
+
+.post{
+    background-color: white;
+
+    height: 520px;
+
+    box-shadow: 1px 1px 1px rgba(30, 30, 30, 0.5);
+}
+
+.postHeader {
+    display:flex;
+    justify-content: space-between;
+    
+    margin-top: 2rem;
+}
+
+h3 {
+    margin: 1rem;
+}
+
+span {
+    margin: 1rem;
+
+    color: rgb(210,210,210);
+}
+
+p {
+    margin: 1rem;
+    padding-bottom: 2rem;
+}
+
